@@ -17,7 +17,42 @@ p {
     border-radius: 6px;
     border: 1px solid blue;
     padding: 10px;
-}</style></head>
+}
+/*Responsive Layout*/
+@media screen and (min-width:750px){
+    header{
+        text-align: center;
+    }
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+        
+    }
+    .project-item{
+        overflow: hidden;
+        
+        padding: 25px 0;
+        overflow: hidden;
+        transition: all ease 1s;
+    }
+    .project-item:hover {
+        scale: 1.08;
+    }
+}
+@media screen and (max-width:749px){
+    h1{
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2{
+        line-height: 1;
+    }
+    .projects h2{
+        margin-bottom: 20px;
+    }
+}
+</style></head>
 <body>
    // <p id="jokeElement">Loading...</p>
 
