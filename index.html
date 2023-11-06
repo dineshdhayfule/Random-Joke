@@ -1,70 +1,44 @@
 <!doctype html>
-<html><head>
-    <title>Jokes</title>
-<style type="text/css" id="dcoder_stylesheet">body {
-    background-color: black;
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+<html>
 
-div{
-/*     display: flex; */
-    margin: auto ;
-    text-align: center;
-    font-size: 50px;
-    color: red;
-    border-radius: 6px;
-    border: 1px solid blue;
-    padding: 10px;
-}
-/*Responsive Layout*/
-@media screen and (min-width:750px){
-    header{
-        text-align: center;
-    }
-    .project-item img{
-        float: left;
-        margin-right: 20px;
-        
-    }
-    .project-item{
-        overflow: hidden;
-        
-        padding: 25px 0;
-        overflow: hidden;
-        transition: all ease 1s;
-    }
-    .project-item:hover {
-        scale: 1.08;
-    }
-}
-@media screen and (max-width:749px){
-    h1{
-        font-size: 75px;
-        line-height: 0.9;
-        margin-bottom: 20px;
-    }
-    h2{
-        line-height: 1;
-    }
-    .projects h2{
-        margin-bottom: 20px;
-    }
-}
-</style></head>
+<head>
+    <title>Jokes</title>
+    <style type="text/css" id="dcoder_stylesheet">
+        body {
+            font-family: 'Montserrat', sans-serif;
+            /* font-family: 'Ubuntu', sans-serif; */
+            line-height: 1.5;
+            font-size: 3rem;
+            font-weight:bold;
+            text-align: center;
+            background-color: rgb(255, 77, 103,0.9);
+        }
+
+        .container {
+            margin: 200px 100px;
+            border: 2px solid rgb(6, 0, 0);
+            padding: 10px;
+            box-shadow: 30px 30px rgb(5, 0, 0);
+        }
+    </style>
+</head>
+
 <body>
-    <div>
-        
-   <p id="jokeElement">Loading...</p>
+
+    <div class="container">
+        <p id="jokeElement">Loading...</p>
     </div>
 
-<script type="text/javascript" id="dcoder_script">fetch('https://icanhazdadjoke.com/slack')
-    .then(data => data.json())
-    .then(jokeData => {
-        const jokeText = jokeData.attachments[0].text;
-       const jokeElement = document.getElementById('jokeElement');
-       jokeElement.innerHTML = jokeText;
-    })</script></body></html>
+
+    <script type="text/javascript" id="dcoder_script">
+        fetch('https://icanhazdadjoke.com/slack')
+            .then(data => data.json())
+            .then(jokeData => {
+                const jokeText = jokeData.attachments[0].text;
+                const jokeElement = document.getElementById('jokeElement');
+                jokeElement.innerHTML = jokeText;
+            })
+    </script>
+</body>
+
+</html>
