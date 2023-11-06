@@ -1,44 +1,14 @@
 <!doctype html>
 <html>
-
 <head>
     <title>Jokes</title>
-    <style type="text/css" id="dcoder_stylesheet">
-        body {
-            font-family: 'Montserrat', sans-serif;
-            /* font-family: 'Ubuntu', sans-serif; */
-            line-height: 1.5;
-            font-size: 3rem;
-            font-weight:bold;
-            text-align: center;
-            background-color: rgb(255, 77, 103,0.9);
-        }
-
-        .container {
-            margin: 200px 100px;
-            border: 2px solid rgb(6, 0, 0);
-            padding: 10px;
-            box-shadow: 30px 30px rgb(5, 0, 0);
-        }
-    </style>
+   <link href="style.css">
+   <script src="script.js"></script>
 </head>
-
 <body>
 
     <div class="container">
         <p id="jokeElement">Loading...</p>
     </div>
-
-
-    <script type="text/javascript" id="dcoder_script">
-        fetch('https://icanhazdadjoke.com/slack')
-            .then(data => data.json())
-            .then(jokeData => {
-                const jokeText = jokeData.attachments[0].text;
-                const jokeElement = document.getElementById('jokeElement');
-                jokeElement.innerHTML = jokeText;
-            })
-    </script>
 </body>
-
 </html>
