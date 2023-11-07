@@ -1,6 +1,6 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Ubuntu', sans-serif; */
+    /*font-family: 'Montserrat', sans-serif;*/
+     font-family: 'Ubuntu', sans-serif; 
     line-height: 1.5;
     font-size: 3rem;
     font-weight:bold;
@@ -12,5 +12,5 @@ body {
     margin: 200px 100px;
     border: 2px solid rgb(6, 0, 0);
     padding: 10px;
-    box-shadow: 30px 30px rgb(5, 0, 0);
+    box-shadow: 20px 40px rgb(5, 0, 0);
 }
