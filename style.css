@@ -1,12 +1,11 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Ubuntu', sans-serif; */
-    line-height: 1.5;
-    font-size: 3rem;
+   /*   font-family: 'Montserrat', sans-serif;
+   font-family: 'Ubuntu', sans-serif; */
+    line-height: 1;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     background-color: rgba(77, 205, 255,0.8);
-
 }
 
 .container {
@@ -15,6 +14,6 @@ body {
     margin:  auto;
     border: 2px solid rgb(6, 0, 0);
     border-radius:20px;
-    padding: 10px;
+    padding: 09px;
     box-shadow: 30px 30px rgb(5, 0, 0, 0.5);
 }
