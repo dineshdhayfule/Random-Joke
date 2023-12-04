@@ -1,16 +1,23 @@
- body {
-            font-family: 'Montserrat', sans-serif;
-            /* font-family: 'Ubuntu', sans-serif; */
-            line-height: 1.5;
-            font-size: 3rem;
-            font-weight:bold;
-            text-align: center;
-            background-color: #06f4f4e6;
- }
+html {
+ background: linear-gradient(to bottom, #ff0000 0%, #000000 100%);
+ background-size: cover;
+}
 
-        .container {
-            margin: 200px 100px;
-            border: 2px solid rgb(6, 0, 0);
-            padding: 10px;
-            box-shadow: 30px 30px rgb(5, 0, 0);
-        }
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 75%;
+    margin: 220px auto;
+    border: 2px solid rgb(6, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 30px 30px rgb(5, 0, 0, 0.5);
+}
