@@ -24,6 +24,7 @@ body {
     .refreshButton {
         left: 50%;
         top: 15%;
+        width: auto;
         border: 2px solid rgb(6, 0, 0);
         border-radius: 20px;
         color: Black; 
