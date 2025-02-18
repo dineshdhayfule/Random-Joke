@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke</title>
     <link rel="stylesheet" href="style.css">
- 
+  <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
@@ -13,6 +15,56 @@
          <p id="jokeElement">Loading...</p>
     </div>
    
+
+    <style>
+        @media (prefers-color-scheme: dark) {
+
+            html, body {
+                height: 100%;
+                width: auto;
+                color: #FFFFFFFF;
+                overflow: hidden;
+                font-family: 'Raleway', sans-serif;
+                text-rendering: geometricPrecision;
+                background-color: #03488f;
+            }
+
+            a, a:hover, a:focus, a:active, a:visited, a:link {
+                text-decoration: none;
+            }
+
+            .refreshButton {
+                left: 50%;
+                top: 20%;
+                cursor: pointer;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 1.105vw 0.205vw rgb(35, 47, 62);
+                background-color: #232f3e;
+                width: 7vw;
+                height: 3vw;
+                border-left: 0.4vw solid #b60ee5;
+                border-radius: 0.315vw;
+                font-weight: bolder;
+                font-size: 1.1vw;
+                line-height: 3vw;
+                text-align: center;
+                transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
+            }
+
+            .refreshButton:hover {
+                color: red;
+                transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
+            }
+        }
+
+    </style>
+
+    <div class="refreshButton" onclick="location.reload()">
+        Refresh
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
