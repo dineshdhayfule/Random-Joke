@@ -25,26 +25,9 @@ body {
         position: absolute;
         left: 50%;
         top: 20%;
-        transform: translateX(-50%);
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 1.105vw 0.205vw rgb(35, 47, 62);
-        background-color: var(--bg, #232f3e); /* Uses CSS variable or default */
-        width: 7vw;
-        height: 3vw;
-        border-left: 0.4vw solid #b60ee5;
-        border-radius: 0.315vw;
-        font-weight: bolder;
-        font-size: 1.1vw;
-        line-height: 3vw;
-        text-align: center;
-        transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
+      border: 2px solid rgb(6, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
         color: white; /* Ensure text is readable */
     }
 
-    .refreshButton:hover {
-        color: red;
-        transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
-    }
