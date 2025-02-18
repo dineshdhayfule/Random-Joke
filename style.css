@@ -11,24 +11,48 @@ body {
     text-align: center;
 }
 
+.refreshButton {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: auto;
+    /* Dynamic width based on content */
+    max-width: 90%;
+    /* Ensure it does not take up the entire screen */
+    padding: 10px 20px;
+    /* Add padding for better appearance */
+    border: 2px solid rgb(6, 0, 0);
+    border-radius: 20px;
+    color: Black;
+}
+
 .container {
     background: transparent;
     backdrop-filter: blur(10px);
-    width: 75%;
-    margin: 220px auto;
+    width: auto;
+    /* Dynamic width based on content */
+    max-width: 90%;
+    /* Ensure it does not take up the entire screen */
+    height: auto;
+    /* Set height to auto */
+    margin: 20px auto;
+    /* Adjust top margin to create space for the button */
     border: 2px solid rgb(6, 0, 0);
     border-radius: 20px;
     padding: 10px;
-    box-shadow: 30px 30px rgb(5, 0, 0, 0.5);
+    box-shadow: 12px 13px rgb(5, 0, 0, 0.5);
 }
-    .refreshButton {
-        left:45%;
-        top: 15%;
-        width: auto;
-        border: 2px solid rgb(6, 0, 0);
-        border-radius: 20px;
-        color: Black; 
-        position: absolute;
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    body {
+        font-size: 2rem;
     }
 
+    .container {
+        width: auto;
+        /* Ensure the container remains dynamic on smaller screens */
+        max-width: 90%;
+        /* Ensure it does not take up the entire screen */
+        margin: 100px auto;
+    }
+}
