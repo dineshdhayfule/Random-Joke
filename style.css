@@ -22,12 +22,11 @@ body {
     box-shadow: 30px 30px rgb(5, 0, 0, 0.5);
 }
     .refreshButton {
-        position: absolute;
         left: 50%;
         top: 20%;
-      border: 2px solid rgb(6, 0, 0);
-    border-radius: 20px;
-    padding: 10px;
-        color: Black; /* Ensure text is readable */
+        border: 2px solid rgb(6, 0, 0);
+        border-radius: 20px;
+        padding: 10px;
+        color: Black; 
     }
 
